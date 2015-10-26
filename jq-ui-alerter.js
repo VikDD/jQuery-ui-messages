@@ -1,6 +1,6 @@
 function alerter(question, _title,_ok_name) {
-    _title = _title || 'Сообщение';
-	_ok_name=_ok_name||'Закрыть';
+    _title = _title || 'Header text';
+	_ok_name=_ok_name||'Close';
     var defer = jQuery.Deferred();
     jQuery('<div></div>').css('z-index','1025').html(question)
     .dialog({autoOpen: true,modal: true,width: "auto",
